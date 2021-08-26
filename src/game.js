@@ -1,5 +1,14 @@
 
-export function gameArea() {
+export function game() {
+    let game = createActor('game')
+    game.appendChild(createActor('character'))
+    game.appendChild(createActor('block'))
 
-    return "This is the game area"
+    return game 
+}
+
+function createActor(idName) {
+    let div = document.createElement('div')
+    div.id = idName
+    return div
 }

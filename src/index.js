@@ -1,12 +1,12 @@
 import _ from 'lodash'
-import {gameArea} from './game'
+import {game} from './game'
 import './style.css'
 
 function component() {
-    const element = document.createElement('div')
+    const element = game()
 
     // Required for Lodash
-    element.innerHTML = _.join(['Hello', ' Dino Runner', gameArea()])
+    //element.innerHTML = _.join([game()])
 
     return element
 }
